@@ -1,0 +1,4 @@
+jupyter
+rise
+numpy
+ipyleaflet
