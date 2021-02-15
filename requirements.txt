@@ -1,4 +1,4 @@
 ipyleaflet>=0.13.6
-jupyter>=1.0.0
+notebook>=6.2.0
 numpy>=1.20.1
 rise>=5.7.1
