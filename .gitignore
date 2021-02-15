@@ -1,2 +1,9 @@
-.ipynb_checkpoints/
+# Python
+.ipynb_checkpoints
 venv
+
+# Reveal.JS Slides
+*.slides.html
+
+# MacOS
+.DS_Store
