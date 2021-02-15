@@ -14400,7 +14400,7 @@ div.jp-OutputPrompt {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">low</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">high</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">low</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">high</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14422,7 +14422,7 @@ div.jp-OutputPrompt {
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([1, 6, 6, 3, 5, 1, 2, 4, 6, 3])</pre>
+<pre>array([6, 2, 3, 5, 5, 3, 2, 4, 4, 4, 4, 3, 1, 1, 1])</pre>
 </div>
 
 </div>
@@ -14471,12 +14471,12 @@ div.jp-OutputPrompt {
 
 
 
-<div id="434b2c80-f090-4f28-b3af-4b86b30a03a9" class="jupyter-widgets jp-OutputArea-output ">
+<div id="a5ec6735-2b00-423c-81e2-479442cff6e4" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('434b2c80-f090-4f28-b3af-4b86b30a03a9');
+var element = document.getElementById('a5ec6735-2b00-423c-81e2-479442cff6e4');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "2c664d2bce384d59b771a606b3b8abfa", "version_major": 2, "version_minor": 0}
+{"model_id": "d576608478a14afa983133715ab3b40b", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -14502,8 +14502,9 @@ var element = document.getElementById('434b2c80-f090-4f28-b3af-4b86b30a03a9');
 <span class="n">m</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="n">center</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 
 <span class="n">heatmap</span> <span class="o">=</span> <span class="n">Heatmap</span><span class="p">(</span>
-    <span class="n">locations</span><span class="o">=</span><span class="p">[[</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">80</span><span class="p">,</span> <span class="mi">80</span><span class="p">),</span> <span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">180</span><span class="p">,</span> <span class="mi">180</span><span class="p">),</span> <span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">)],</span>
-    <span class="n">radius</span><span class="o">=</span><span class="mi">20</span>
+    <span class="n">locations</span><span class="o">=</span><span class="p">[[</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">80</span><span class="p">,</span> <span class="mi">80</span><span class="p">),</span> <span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">180</span><span class="p">,</span> <span class="mi">180</span><span class="p">),</span> <span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2000</span><span class="p">)],</span>
+    <span class="n">radius</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+    <span class="n">gradient</span><span class="o">=</span><span class="p">{</span><span class="mf">0.4</span><span class="p">:</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">:</span> <span class="s1">&#39;cyan&#39;</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">:</span> <span class="s1">&#39;lime&#39;</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">:</span> <span class="s1">&#39;yellow&#39;</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">:</span> <span class="s1">&#39;red&#39;</span><span class="p">}</span>
 <span class="p">)</span>
 
 <span class="n">m</span><span class="o">.</span><span class="n">add_layer</span><span class="p">(</span><span class="n">heatmap</span><span class="p">);</span>
@@ -14531,12 +14532,12 @@ var element = document.getElementById('434b2c80-f090-4f28-b3af-4b86b30a03a9');
 
 
 
-<div id="54d9b414-09a7-4916-8a46-182d1492eb18" class="jupyter-widgets jp-OutputArea-output ">
+<div id="db4543c2-cd8a-4570-af80-8dc17e08ef0d" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('54d9b414-09a7-4916-8a46-182d1492eb18');
+var element = document.getElementById('db4543c2-cd8a-4570-af80-8dc17e08ef0d');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "d233439e940e4211b7020739ef5652f2", "version_major": 2, "version_minor": 0}
+{"model_id": "ed2fae39e6d84a1cbe2620a123d454cc", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -14555,14 +14556,129 @@ var element = document.getElementById('54d9b414-09a7-4916-8a46-182d1492eb18');
 </div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">air_quality_bristol_query</span> <span class="o">=</span> <span class="s1">&#39;https://opendata.bristol.gov.uk/api/records/1.0/search/?dataset=air-quality-data-continuous&amp;q=&amp;rows=1000&amp;sort=date_time&amp;facet=date_time&amp;facet=coordinates&amp;facet=temp&#39;</span>
+
+<span class="kn">import</span> <span class="nn">urllib</span><span class="o">,</span> <span class="nn">json</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">air_quality_bristol_query</span><span class="p">)</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Json root keys&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;3 records&#39;</span><span class="p">)</span>
+<span class="n">data</span><span class="p">[</span><span class="s1">&#39;records&#39;</span><span class="p">][:</span><span class="mi">3</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Json root keys
+dict_keys([&#39;nhits&#39;, &#39;parameters&#39;, &#39;records&#39;, &#39;facet_groups&#39;])
+3 records
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[{&#39;datasetid&#39;: &#39;air-quality-data-continuous&#39;,
+  &#39;recordid&#39;: &#39;ab1ad5fd789cfc7afef424f411c2e206a7bcb433&#39;,
+  &#39;fields&#39;: {&#39;datestart&#39;: &#39;2002-02-01T00:00:00+00:00&#39;,
+   &#39;temp&#39;: 9.924299,
+   &#39;date_time&#39;: &#39;2021-02-15T17:00:00+00:00&#39;,
+   &#39;no&#39;: 24.25415,
+   &#39;geo_point_2d&#39;: [51.432675707, -2.60495665673],
+   &#39;current&#39;: &#39;True&#39;,
+   &#39;nox&#39;: 87.210001,
+   &#39;location&#39;: &#39;Parson Street School&#39;,
+   &#39;siteid&#39;: 215,
+   &#39;no2&#39;: 50.059687,
+   &#39;rh&#39;: 24.55922,
+   &#39;instrumenttype&#39;: &#39;Continuous (Reference)&#39;,
+   &#39;pm25&#39;: 7.2222231},
+  &#39;geometry&#39;: {&#39;type&#39;: &#39;Point&#39;, &#39;coordinates&#39;: [-2.60495665673, 51.432675707]},
+  &#39;record_timestamp&#39;: &#39;2021-02-15T17:15:11.183000+00:00&#39;},
+ {&#39;datasetid&#39;: &#39;air-quality-data-continuous&#39;,
+  &#39;recordid&#39;: &#39;8382f7cf019c6cec0950f5c729a0d4f46fc1e48f&#39;,
+  &#39;fields&#39;: {&#39;datestart&#39;: &#39;2003-05-23T00:00:00+00:00&#39;,
+   &#39;date_time&#39;: &#39;2021-02-15T17:00:00+00:00&#39;,
+   &#39;no&#39;: 55.4915,
+   &#39;geo_point_2d&#39;: [51.4278638883, -2.56374153315],
+   &#39;current&#39;: &#39;True&#39;,
+   &#39;nox&#39;: 127.850628,
+   &#39;location&#39;: &#39;Wells Road&#39;,
+   &#39;siteid&#39;: 270,
+   &#39;instrumenttype&#39;: &#39;Continuous (Reference)&#39;,
+   &#39;no2&#39;: 42.744375},
+  &#39;geometry&#39;: {&#39;type&#39;: &#39;Point&#39;,
+   &#39;coordinates&#39;: [-2.56374153315, 51.4278638883]},
+  &#39;record_timestamp&#39;: &#39;2021-02-15T17:15:11.183000+00:00&#39;},
+ {&#39;datasetid&#39;: &#39;air-quality-data-continuous&#39;,
+  &#39;recordid&#39;: &#39;c6a2c0f17d1b41664211d8e1c3e81235433f625a&#39;,
+  &#39;fields&#39;: {&#39;datestart&#39;: &#39;2009-03-13T00:00:00+00:00&#39;,
+   &#39;date_time&#39;: &#39;2021-02-15T17:00:00+00:00&#39;,
+   &#39;no&#39;: 24.8153,
+   &#39;geo_point_2d&#39;: [51.4780449714, -2.53523027459],
+   &#39;current&#39;: &#39;True&#39;,
+   &#39;nox&#39;: 86.014686,
+   &#39;location&#39;: &#39;Fishponds Road&#39;,
+   &#39;siteid&#39;: 463,
+   &#39;instrumenttype&#39;: &#39;Continuous (Reference)&#39;,
+   &#39;no2&#39;: 48.00375},
+  &#39;geometry&#39;: {&#39;type&#39;: &#39;Point&#39;,
+   &#39;coordinates&#39;: [-2.53523027459, 51.4780449714]},
+  &#39;record_timestamp&#39;: &#39;2021-02-15T17:15:11.183000+00:00&#39;}]</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="n">center</span><span class="o">=</span><span class="p">(</span><span class="mf">51.454500</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.587900</span><span class="p">),</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">gradient</span><span class="o">=</span><span class="p">{</span><span class="mf">0.4</span><span class="p">:</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">:</span> <span class="s1">&#39;cyan&#39;</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">:</span> <span class="s1">&#39;lime&#39;</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">:</span> <span class="s1">&#39;yellow&#39;</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">:</span> <span class="s1">&#39;red&#39;</span><span class="p">}</span>
 
+<span class="n">position_id</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">field_map</span> <span class="o">=</span> <span class="p">{</span><span class="n">field</span><span class="p">:</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">field</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">fields</span><span class="p">)}</span>
 <span class="n">heatmap</span> <span class="o">=</span> <span class="n">Heatmap</span><span class="p">(</span>
-    <span class="n">locations</span><span class="o">=</span><span class="p">[[</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">values</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="k">for</span> <span class="n">values</span> <span class="ow">in</span> <span class="n">record_values</span><span class="p">],</span>
-    <span class="n">radius</span><span class="o">=</span><span class="mi">20</span>
+    <span class="n">locations</span><span class="o">=</span><span class="p">[[</span><span class="n">values</span><span class="p">[</span><span class="n">field_map</span><span class="p">[</span><span class="s1">&#39;geo_point_2d&#39;</span><span class="p">]][</span><span class="mi">0</span><span class="p">],</span>
+                <span class="n">values</span><span class="p">[</span><span class="n">field_map</span><span class="p">[</span><span class="s1">&#39;geo_point_2d&#39;</span><span class="p">]][</span><span class="mi">1</span><span class="p">],</span>
+                <span class="n">values</span><span class="p">[</span><span class="n">field_map</span><span class="p">[</span><span class="s1">&#39;no&#39;</span><span class="p">]]]</span> <span class="k">for</span> <span class="n">values</span> <span class="ow">in</span> <span class="n">record_values</span><span class="p">],</span>
+    <span class="n">radius</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+    <span class="n">gradient</span><span class="o">=</span><span class="n">gradient</span>
 <span class="p">)</span>
 
 <span class="n">m</span><span class="o">.</span><span class="n">add_layer</span><span class="p">(</span><span class="n">heatmap</span><span class="p">);</span>
@@ -14590,12 +14706,229 @@ var element = document.getElementById('54d9b414-09a7-4916-8a46-182d1492eb18');
 
 
 
-<div id="b2e316e5-8950-4984-9441-a63dc7d81271" class="jupyter-widgets jp-OutputArea-output ">
+<div id="5a5a3065-587d-411c-93f0-1220bdc8e2ba" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('b2e316e5-8950-4984-9441-a63dc7d81271');
+var element = document.getElementById('5a5a3065-587d-411c-93f0-1220bdc8e2ba');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "482fe1e34e4349cfb251d05dccc92203", "version_major": 2, "version_minor": 0}
+{"model_id": "9956295682c04e20aa40096139d5c1ae", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Pandas-dataframe">Pandas dataframe<a class="anchor-link" href="#Pandas-dataframe">&#182;</a></h1><p>We will use pandas to analyse the data</p>
+
+</div>
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">df_records</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">record_values</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">fields</span><span class="p">)</span>
+<span class="n">df_records</span><span class="p">[[</span><span class="s1">&#39;Longitude&#39;</span><span class="p">,</span> <span class="s1">&#39;Latitude&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df_records</span><span class="p">[</span><span class="s1">&#39;geo_point_2d&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> <span class="n">index</span><span class="o">=</span> <span class="n">df_records</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<span class="n">df_records</span> <span class="o">=</span> <span class="n">df_records</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;date_time&#39;</span><span class="p">)</span>
+<span class="n">df_records</span> <span class="o">=</span> <span class="n">df_records</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Longitude&#39;</span><span class="p">,</span> <span class="s1">&#39;Latitude&#39;</span><span class="p">],</span> <span class="n">keep</span><span class="o">=</span><span class="s1">&#39;first&#39;</span><span class="p">)</span>
+<span class="n">df_records</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>date_time</th>
+      <th>geo_point_2d</th>
+      <th>temp</th>
+      <th>no</th>
+      <th>no2</th>
+      <th>nox</th>
+      <th>Longitude</th>
+      <th>Latitude</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>5999</th>
+      <td>2021-02-09T15:00:00+00:00</td>
+      <td>[51.4552693825, -2.59664882861]</td>
+      <td>NaN</td>
+      <td>23.260010</td>
+      <td>44.932065</td>
+      <td>80.601245</td>
+      <td>51.455269</td>
+      <td>-2.596649</td>
+    </tr>
+    <tr>
+      <th>5988</th>
+      <td>2021-02-09T15:00:00+00:00</td>
+      <td>[51.4278638883, -2.56374153315]</td>
+      <td>NaN</td>
+      <td>15.774550</td>
+      <td>18.599062</td>
+      <td>42.840000</td>
+      <td>51.427864</td>
+      <td>-2.563742</td>
+    </tr>
+    <tr>
+      <th>5964</th>
+      <td>2021-02-09T16:00:00+00:00</td>
+      <td>[51.432675707, -2.60495665673]</td>
+      <td>0.319902</td>
+      <td>42.086250</td>
+      <td>60.578438</td>
+      <td>125.173126</td>
+      <td>51.432676</td>
+      <td>-2.604957</td>
+    </tr>
+    <tr>
+      <th>5963</th>
+      <td>2021-02-09T16:00:00+00:00</td>
+      <td>[51.4579497129, -2.58398909033]</td>
+      <td>NaN</td>
+      <td>36.546000</td>
+      <td>58.523000</td>
+      <td>114.559000</td>
+      <td>51.457950</td>
+      <td>-2.583989</td>
+    </tr>
+    <tr>
+      <th>5951</th>
+      <td>2021-02-09T16:00:00+00:00</td>
+      <td>[51.4417471802, -2.55995583224]</td>
+      <td>NaN</td>
+      <td>3.460425</td>
+      <td>13.387500</td>
+      <td>18.646875</td>
+      <td>51.441747</td>
+      <td>-2.559956</td>
+    </tr>
+    <tr>
+      <th>5986</th>
+      <td>2021-02-09T16:00:00+00:00</td>
+      <td>[51.4628294172, -2.58454081635]</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>51.462829</td>
+      <td>-2.584541</td>
+    </tr>
+    <tr>
+      <th>5981</th>
+      <td>2021-02-09T16:00:00+00:00</td>
+      <td>[51.4780449714, -2.53523027459]</td>
+      <td>NaN</td>
+      <td>27.309301</td>
+      <td>37.676250</td>
+      <td>79.607812</td>
+      <td>51.478045</td>
+      <td>-2.535230</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Binary-probabilistic-classifier">Binary probabilistic classifier<a class="anchor-link" href="#Binary-probabilistic-classifier">&#182;</a></h1><p>Simulation of a probabilistic classifier with a linear transformation to convert raw values into the interval [0, 1]</p>
+
+</div>
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="n">center</span><span class="o">=</span><span class="p">(</span><span class="mf">51.454500</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.587900</span><span class="p">),</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">gradient</span><span class="o">=</span><span class="p">{</span><span class="mf">0.0</span><span class="p">:</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">:</span> <span class="s1">&#39;red&#39;</span><span class="p">}</span>
+
+<span class="n">heatmap</span> <span class="o">=</span> <span class="n">Heatmap</span><span class="p">(</span>
+    <span class="n">locations</span><span class="o">=</span><span class="n">locations</span><span class="p">,</span>
+    <span class="n">radius</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span>
+    <span class="n">gradient</span><span class="o">=</span><span class="n">gradient</span><span class="p">,</span>
+    <span class="n">min_opacity</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">m</span><span class="o">.</span><span class="n">add_layer</span><span class="p">(</span><span class="n">heatmap</span><span class="p">);</span>
+<span class="n">display</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="e2eba4fb-defd-47d1-9d99-32ec364bf0a1" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('e2eba4fb-defd-47d1-9d99-32ec364bf0a1');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "5a5b6d32bf1f4c998ce25cf026fa991c", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
