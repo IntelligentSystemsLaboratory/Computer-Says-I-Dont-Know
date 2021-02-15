@@ -1,4 +1,4 @@
-[![Open in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IntelligentSystemsLaboratory/Computer-Says-I-Dont-Know/master)
+[![Open in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IntelligentSystemsLaboratory/Computer-Says-I-Dont-Know/main)
 [![View Slides](https://img.shields.io/badge/view-slides-blue.svg)](https://IntelligentSystemsLaboratory.github.io/Computer-Says-I-Dont-Know/Template.slides.html)
 
 # Computer Says I Don't know #
