@@ -1,0 +1,73 @@
+AI UK: possible talks
+https://smartsurvey.co.uk/s/AIUKproposals
+Deadline Friday 25 October
+
+(Knowledge-driven vs data-driven AI, System 1/2, human in the loop, interactive etc.)
+
+# Computer says "I don't know" - the case for Honest AI
+
+Would you consider it newsworthy if a human passes a multiple-choice test? Probably not. Yet multiple-choice tests are behind many AI successes reported in the media, leading to recent headlines such as "researchers taught an AI to recognize smells", "AI Trained on Old Scientific Papers Makes Discoveries Humans Missed", "AI learns to recognize nerve cells", and so on. We are then told that "AI passed the test" or "the algorithm worked" -- but what exactly does that mean? What is the passing grade, and who sets it? 
+
+In this talk I will discuss why performance evaluation is not something that can be easily summarised in a catchy headline -- neither for humans nor for machines. Furthermore, I will argue why it is imperative that AI algorithms become more *honest* about their own abilities. Quantifying the uncertainty in their predictions in the same way as weather forecasters do -- saying "the chance of rain is 70%" rather than "it will rain" -- would be a good start. Quantifying the uncertainty in that chance estimate --  am I confident that 70% is close to the right number, or did I just guess that on the basis of the last three days? -- would be even better. 
+
+But what would really demonstrate an AI algorithm's awareness of its own strengths *and* limitations is if it would occasionally say "I don't know" -- something that not many contemporary AI algorithms and machine-learned classifiers do (often leading to problems with "adversarial examples" which are doctored to mislead the algorithm). I will discuss in an accessible way how this arises due to a focus on discriminative learning, and how recent research has developed ways to overcome this, allowing AI and machine learning to become more honest and aware of its own limitations.  
+
+-=-=-=-=-=-=-=-
+
+Talk proposals for AI UK
+ 
+1. Your full name *
+
+
+ 
+2. Your organisation and/or affiliation *
+
+
+ 
+3. Your email address *
+
+
+ 
+4. Link to your website
+
+
+ 
+5. Proposed talk title *
+
+
+ 
+6. Does this talk align to one of the Turing's research challenges? (Note: this is not a condition of application, but will help the organising committee to send the application to the appropriate reviewer)
+
+Data science at scale
+Data science for science and humanities
+Data centric engineering
+Defence and security
+Finance and economics
+Health and Medical Sciences
+Public Policy
+Research Engineering
+Urban Analytics
+ 
+7. What best describes the type of your talk? Please tick all that apply *
+
+Technical
+*Accessible
+Multi-disciplinary
+TED style
+Workshop
+Lecture
+Interactive
+Other (please specify):
+
+ 
+8. Please describe your talk *
+
+
+ 
+9. Please explain why your talk will be of interest and relevance *
+
+
+ 
+10. Please share any other information you wish to support your application, including links to examples of your work.
+
+
