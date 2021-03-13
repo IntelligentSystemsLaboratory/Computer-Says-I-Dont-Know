@@ -320,7 +320,7 @@ class AIUKSlides(object):
                                   datapoints=[self.x_local, self.y_local],
                                   contourmap=contourmap, isolines=isolines,
                                   colormap=reversed_colormap(linear.RdBu_05),
-                                  legend_title='Prob. Up', zoom=zoom,
+                                  legend_title='Up vs Down', zoom=zoom,
                                   fillopacity=fillopacity,
                                   lineopacity=lineopacity,
                                   width=width, height=height)
@@ -362,14 +362,14 @@ class AIUKSlides(object):
 
         m = ipyleaflet_contourmap(center=self.local_center, contourmap=contourmap_c1_fg,
                               isolines=isolines,
-                              colormap=Alpha_Reds_08, legend_title='Up & FG',
+                              colormap=Alpha_Reds_08, legend_title='Up',
                               width=width, height=height)
 
         Alpha_blues_09 = colormap_alpha(linear.Blues_09)
         ipyleaflet_contourmap(center=self.local_center,
                               datapoints=[self.x_local, self.y_local],
                               contourmap=contourmap_c0_fg, isolines=isolines,
-                              colormap=Alpha_blues_09, legend_title='Dn & FG',
+                              colormap=Alpha_blues_09, legend_title='Down',
                               m=m, width=width, height=height)
         return m
 
